@@ -1,0 +1,97 @@
+.header {
+  width: 500px;
+}
+.cards {
+  min-height: 320px;
+}
+
+.red {
+  background-color: #ed463a;
+}
+.red-bottom {
+  border-bottom: 3px solid #ed463a;
+}
+.red-hover:hover {
+  transform: scale(0.97);
+  border-bottom: 7px solid #ed463a;
+}
+
+.green {
+  background-color: #00b154;
+}
+.green-bottom {
+  border-bottom: 3px solid #00b154;
+}
+.green-hover:hover {
+  transform: scale(0.97);
+  border-bottom: 7px solid #00b154;
+}
+
+.blue {
+  background-color: #29529f;
+}
+.blue-bottom {
+  border-bottom: 3px solid #29529f;
+}
+.blue-hover:hover {
+  transform: scale(0.97);
+  border-bottom: 7px solid #29529f;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.gambar {
+  background-image: url("../img/bg.svg");
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 25px 0 !important;
+}
+.gambar img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+}
+.rounded {
+  border-radius: 10px !important;
+}
+
+/* ripple */
+.ripple {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.ripple > .wave-ripple {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  animation: wave-ripple 0.6s linear;
+}
+
+@keyframes wave-ripple {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+  .cards {
+    min-height: 260px;
+  }
+  .gambar {
+    padding: 15px 0 !important;
+  }
+  .gambar img {
+    width: 70px;
+    height: 70px;
+  }
+}
